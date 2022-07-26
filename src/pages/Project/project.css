@@ -1,0 +1,20 @@
+.section-curriculum{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #7510F7;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+
+.grid-container{
+    display: inline-grid;
+    padding: 20px;
+}
+
+.item{
+    color: black;
+    background-color: red;
+}

@@ -9,11 +9,13 @@ export default createGlobalStyle`
 }
 
 html, body, #root{
-    min-height: 100%
+    min-height: 100%;
+    
+    
 }
 
 body{
-    background: #ffc600;
+    background: whitesmoke;
     font-size: 14px;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -21,10 +23,41 @@ body{
 body, input, button{
     color: #ffffff;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 button{
     cursor: pointer;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul, li{
+    list-style: none;
+
+}
+
+.active {
+    font-weight: bold;
+    background-color:  gray;
+    padding: 10px;
+    
+  }
+
+#logotipo{
+    width: 100px;
+    height: 50px ;
+}
+
+h2{
+    font-family: cursive;
+    font-weight: 900;
+    line-height: 3em;
+    margin-bottom: 20px;
+
+}
+
 `;

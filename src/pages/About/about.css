@@ -1,0 +1,32 @@
+.section-curriculum{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #7510F7;
+    padding: 50px;
+}
+
+.section-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 30px;
+}
+
+.img-perfil{
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+}
+
+.img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
