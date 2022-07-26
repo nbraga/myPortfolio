@@ -13,18 +13,15 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Botao from "../../components/BotaoAcao";
-import { Paper } from "@mui/material";
-
-import bg from "../../assets/img/bg-home.jpg";
 
 import Zoom from "react-reveal/Zoom";
-
 import CardProjeto from "../../components/HomeCardProjeto";
 import "./home.css";
 
 import emorio from "../../assets//img/emorio.png";
 import rede from "../../assets//img/redeam.png";
 import servconn from "../../assets//img/servconn.png";
+import bg from "../../assets/img/bg-home.jpg";
 
 const theme = createTheme();
 
@@ -118,11 +115,10 @@ export default function Home() {
               </Typography>
 
               <Typography width="60%" align="center" lineHeight={2} paragraph>
-                Estou iniciando minha vida nesse imenso mundo da programação,
-                como esses são os primeiros passos, estou em fase de aprender e
-                colocar em prática, entendo que existem muitos profissionais no
-                ramo, mas sei do meu esforço e tenho orgulho de ser focado
-                naquilo que desejo.
+                Estou iniciando nesse imenso mundo da programação, são os
+                primeiros passos, estou em fase de aprendizado mas já coloco em
+                prática aquilo que sei. Existem muitos profissionais no ramo,
+                porém eu me destaco por meu esforço e foco naquilo que desejo.
               </Typography>
             </Box>
           </Zoom>
@@ -223,7 +219,13 @@ export default function Home() {
                         expandir seu alcance realizando parcerias com diversas
                         pessoas.
                       </Typography>
-                      <Botao texto="Visitar o Site" icon={true} />
+                      <a
+                        href="https://squad53-recodepro.github.io/emorio-digital2/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Botao texto="Visitar o Site" icon={true} />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -245,7 +247,13 @@ export default function Home() {
                         toda operação da empresa será com Sede em Manaus,
                         necessitando de uma inovação no setor.
                       </Typography>
-                      <Botao texto="Visitar o Site" icon={true} />
+                      <a
+                        href="https://programacao-ram.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Botao texto="Visitar o Site" icon={true} />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -267,7 +275,13 @@ export default function Home() {
                         retorno futuramente, sempre acreditando que tudo é
                         possível, basta o primeiro passo.
                       </Typography>
-                      <Botao texto="Visitar o Site" icon={true} />
+                      <a
+                        href="https://servconn.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Botao texto="Visitar o Site" icon={true} />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -313,7 +327,7 @@ const data = [
   {
     titulo: "Web Design",
     texto:
-      "Algo que me interessa também é a UI UX, dedico parte do meu tempo para desenhar novas interfaces no Figma",
+      "Me interesso por UX/UI, dedico parte do meu tempo para desenhar novas interfaces no Figma.",
     subtitulo: "Gosto de projetar",
     texto2:
       "UI UX, interfaces de usuários, web, dispositivos móveis, aplicativos e logotipos",
@@ -324,10 +338,10 @@ const data = [
   {
     titulo: "Desenvolvedor Front-end",
     texto:
-      "Estou começando por pequenos projetos, buscando conhecimento e meu sonho é ser um Desenvolvedor Full Stack",
+      "Já atuei em pequenos projetos e estou trilhando o caminho para me tornar Desenvolvedor Full Stack.",
     subtitulo: "Meu Estudo",
     texto2:
-      "Estou focando agora em API e o NodeJS para aprimorar meu conhecimento em Backend para ser mais completo na minha atuação",
+      "Estou focado em API e NodeJS para aprimorar meu conhecimento em Back-end para ter uma atuação ampla.",
     subtitulo2: "Conteúdos",
     texto3:
       "Html, Css, JavaScript, Bootstrap, React JS, NodeJS, Redux, Styled Components, Material UI, Firebase, MongoDB, MySQL, API e Git Hub",
@@ -336,13 +350,13 @@ const data = [
   {
     titulo: "Mentor",
     texto:
-      "Ensinar é algo que desejo para o meu futuro, da mesma forma que aprendi com ótimos profissionais, quero passar para meus alunos",
+      "Tenho vocação para ensinar e no futuro pretendo colocar em prática. Da mesma forma que aprendi com ótimos profissionais, quero transmitir meus conhecimentos para mais pessoas.",
     subtitulo: "Futuro",
     texto2:
-      "Quando terminar o curso Full Stack na RECODE PRO, pretendo começar a pós em Desenvolvimento em Aplicações WEB e curso para aprender inglês.",
+      "Quando terminar o curso Full Stack na Recode Pro, começarei um curso de pós-graduação em Desenvolvimento em Aplicações WEB e aprimorar o inglês.",
     subtitulo2: "O que faço para melhorar?",
     texto3:
-      "Durante a pandemia, evolui muito na questão de estudar sozinho, leituras e tutoriais. Busco sempre ler algo para meu desenvolvimento pessoal e também manter o contato com profissionais da área",
+      "Durante a pandemia, evolui muito no autodidatismo, através de leituras e tutoriais. Busco sempre manter a leitura atualizada para meu desenvolvimento pessoal e manter networking com profissionais da área.",
     icone: "icons/mentor.svg",
   },
 ];

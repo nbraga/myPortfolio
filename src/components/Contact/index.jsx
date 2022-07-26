@@ -7,10 +7,14 @@ import TextField from "@mui/material/TextField";
 import React, { useState } from "react";
 import { Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import CircularProgress from "@mui/material/CircularProgress";
+import { toast } from "react-toastify";
 
 const theme = createTheme();
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -30,6 +34,7 @@ export default function Contact() {
     setContact({ ...contact, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     try {
       const res = await fetch("https://api.staticforms.xyz/submit", {
@@ -46,11 +51,18 @@ export default function Contact() {
           message: "Thank you for reaching out to us.",
         });
         resetarCampos();
+        setLoading(false);
+        toast.success(
+          "Muito obrigado pelo contato, seu e-mail foi enviado com sucesso!"
+        );
       } else {
         setResponse({
           type: "error",
           message: json.message,
         });
+        toast.error(
+          "Houve algum erro, envie por favor para o e-mail ncls.braga19@gmail.com!"
+        );
       }
     } catch (e) {
       console.log("An error occurred", e);
@@ -156,9 +168,18 @@ export default function Contact() {
             </Grid>
             <Grid item xs={12}>
               <Item>
-                <Button variant="contained" type="submit">
-                  Enviar Mensagem
-                </Button>
+                {loading ? (
+                  <Button
+                    variant="contained"
+                    endIcon={<CircularProgress color="inherit" size={20} />}
+                  >
+                    Enviando...
+                  </Button>
+                ) : (
+                  <Button variant="contained" type="submit">
+                    Enviar Mensagem
+                  </Button>
+                )}
               </Item>
             </Grid>
           </Grid>

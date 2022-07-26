@@ -138,6 +138,7 @@ export default function Project() {
               text={item.text}
               image={item.image}
               tags={item.tags}
+              adress={item.adress}
             />
           ))}
         </Box>
@@ -152,6 +153,7 @@ const data = [
     text: "Iniciativa Social criada a partir do programa RECODE PRO, onde pude desenvolver o projeto junto ao SQUAD 053. ",
     tags: ["#HTML ", "#CSS ", "#JavaScript ", "#Bootstrap ", "#MySQL "],
     image: "/img/emorio.png",
+    adress: "https://squad53-recodepro.github.io/emorio-digital2/",
   },
   {
     title: "Services Conections",
@@ -165,6 +167,7 @@ const data = [
       "#API ",
     ],
     image: "/img/servconn.png",
+    adress: "https://servconn.netlify.app/",
   },
   {
     title: "Rede Amazônica",
@@ -178,5 +181,6 @@ const data = [
       "#Firebase",
     ],
     image: "/img/redeam.png",
+    adress: " https://programacao-ram.netlify.app/",
   },
 ];

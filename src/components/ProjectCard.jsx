@@ -1,15 +1,14 @@
-import * as React from "react";
+import { CardActionArea } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-import { Link } from "react-router-dom";
+import * as React from "react";
 
 export default function ProjectCard(props) {
   return (
-    <Card sx={{ maxWidth: 345, minHeight: 350, p: 1 }}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 345, minHeight: 350, p: 1, m: 2 }}>
+      <CardActionArea href={props.adress} target="_blank">
         <CardMedia
           component="img"
           height="100%"

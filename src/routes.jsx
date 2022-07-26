@@ -10,9 +10,13 @@ import Error404 from "./pages/Error404";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Rotas = () => {
   return (
     <BrowserRouter>
+      <ToastContainer autoClose={3000} />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

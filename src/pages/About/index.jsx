@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import { createTheme, styled, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import { Container } from "@mui/material";
 
 import bgcv from "../../assets/img/bgilustrado.png";
 import perfil from "../../assets/img/perfil.jpeg";
@@ -27,44 +28,43 @@ export default function About() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
-        sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
-        component="main"
-      >
+      <Box component="main">
         <Box sx={{ width: "100%", background: "#7510F7" }}>
-          <Stack>
-            <Item>
-              <Typography
-                variant="h3"
-                component="div"
-                fontWeight={700}
-                color="white"
-                gutterBottom
-              >
-                Sobre
-              </Typography>
-            </Item>
-            <Item>
-              <img className="img-perfil" src={perfil} alt="Nicolas Braga" />
-            </Item>
-            <Item>
-              <Typography
-                variant="body1"
-                align="center"
-                color="white"
-                width={400}
-                margin={5}
-              >
-                Meu nome é Nicolas, tenho 25 anos, sou formado em Sistemas de
-                Informação, meu grande objetivo desse ano é conseguir minha
-                primeira vaga como desenvolvedor WEB e um dia poder ser um
-                excelente profissional Full Stack.
-              </Typography>
-            </Item>
-            <Item>
-              <img src={setup} alt="Setup" width="90%" />
-            </Item>
-          </Stack>
+          <Container>
+            <Stack>
+              <Item>
+                <Typography
+                  variant="h3"
+                  component="div"
+                  fontWeight={700}
+                  color="white"
+                  gutterBottom
+                >
+                  Sobre
+                </Typography>
+              </Item>
+              <Item>
+                <img className="img-perfil" src={perfil} alt="Nicolas Braga" />
+              </Item>
+              <Item>
+                <Typography
+                  variant="body1"
+                  align="center"
+                  color="white"
+                  width={400}
+                  margin={5}
+                >
+                  Meu nome é Nicolas, tenho 25 anos, sou formado em Sistemas de
+                  Informação, meu grande objetivo desse ano é conseguir minha
+                  primeira vaga como desenvolvedor WEB e um dia poder ser um
+                  excelente profissional Full Stack.
+                </Typography>
+              </Item>
+              <Item>
+                <img src={setup} alt="Setup" width="90%" />
+              </Item>
+            </Stack>
+          </Container>
         </Box>
 
         {/* Curriculum */}
