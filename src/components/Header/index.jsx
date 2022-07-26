@@ -13,7 +13,6 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
 
 import logo from "../../assets/img/logotipos/logo-2tp.png";
-import "./index.css";
 
 const pages = [
   {
@@ -66,7 +65,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <AppBar position="static">
+      <AppBar position="relative">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography

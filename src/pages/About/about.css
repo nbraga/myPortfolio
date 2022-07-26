@@ -25,8 +25,9 @@
 
 .img-text{
     display: flex;
-    justify-content: center;
+    width: 80%;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    
 }

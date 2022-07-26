@@ -68,7 +68,16 @@ export default function About() {
         </Box>
 
         {/* Curriculum */}
-        <section className="section-perfil">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            padding: "50px 20px 50px 20px",
+            justifyContent: "center",
+            alignItems: "center",
+            background: "linear-gradient(to right, #0f0c29, #302b63, #24243e)",
+          }}
+        >
           <Typography
             variant="h3"
             component="div"
@@ -81,7 +90,7 @@ export default function About() {
 
           <div className="img-text">
             <img width={400} src={bgcv} alt="Ilustração" />
-            <Typography variant="body1" align="justify" width={400} margin={10}>
+            <Typography variant="body1" align="justify" width={400} my={5}>
               Estou anexando meu curriculum caso seja necessário, acredito que
               tenha todas informações, caso falte algo, peço que me enviem pelo
               formulário de contato, sugestões também serão bem-vindas.
@@ -91,13 +100,12 @@ export default function About() {
           <a href="docs/curriculum.pdf" download>
             <Botao texto="Download" icon={true} />
           </a>
-        </section>
+        </Box>
         {/* Curriculum */}
 
         {/* Apresentação */}
         <Box
           sx={{
-            width: "100%",
             background: "#7510F7",
             padding: "50px 20px 50px 20px",
           }}
