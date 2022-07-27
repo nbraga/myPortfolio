@@ -49,7 +49,6 @@ export default function Home() {
             maxWidth="lg"
           >
             <Typography
-              fontSize="4rem"
               component="h1"
               variant="h2"
               align="center"
@@ -378,7 +377,7 @@ const cards = [
   {
     title: "RECODE PRO",
     text: "Tenho muito orgulho de poder participar do programa da RECODE, estou obtendo muito conhecimento e conhecendo pessoas maravilhosas, uma ótima experiência.",
-    bg: "https://yt3.ggpht.com/ytc/AKedOLQ_E5H_tOySckFgoTrdhGOijyWGJNcCnZJXJPtTww=s900-c-k-c0x00ffffff-no-rj",
+    bg: "img/recode.jpg",
     linkPointer: "https://recodepro.org.br/",
   },
 ];

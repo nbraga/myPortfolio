@@ -128,7 +128,7 @@ export default function About() {
                 title="Apresentação"
                 width="80%"
                 height="500"
-                src="https://www.youtube.com/embed/Zi_XLOBDo_Y"
+                src="https://www.youtube.com/embed/bML7D0JR75I"
               />
             </Item>
           </Stack>
